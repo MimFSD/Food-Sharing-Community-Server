@@ -8,6 +8,8 @@ require('dotenv').config()
 const port = 5000
 
 
+
+
 app.use(express.json())
 app.use(cors({
   origin:[
@@ -68,14 +70,14 @@ async function run() {
       }).send({success: true})
     })
 
-    // app.post('/logout', async(req, res)=>{
-    //   const user = req.body;
-    //   console.log('logged out ', user)
-    //   res.clearCookie('token',{
-    //     secure: process.env.ACCESS_TOKEN === "production" ? true: false,
-    //     sameSite: process.env.ACCESS_TOKEN === "production" ? "none" : "strict",})
-    //     .send({success: true})
-    // })
+    app.post('/logout', async(req, res)=>{
+      const user = req.body;
+      console.log('logged out ', user)
+      res.clearCookie('token',{
+        secure: process.env.ACCESS_TOKEN === "production" ? true: false,
+        sameSite: process.env.ACCESS_TOKEN === "production" ? "none" : "strict",})
+        .send({success: true})
+    })
     app.post('/logout', async (req, res) => {
       const user = req.body;
       console.log('logging out', user);
