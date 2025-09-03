@@ -1,10 +1,3 @@
-Got it 👍
-You want a **README.md** file for your project **Food-Sharing-Community-Server** that explains how to run it. I’ll create a clean, professional README with installation, usage, and tech stack details.
-
-Here’s a draft:
-
----
-
 # 🍲 Food Sharing Community Server
 
 A backend server for the **Food Sharing Community** platform that allows users to share surplus food, request meals, and build a sustainable sharing network.
@@ -122,6 +115,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 This project is licensed under the MIT License.
 
----
-
-👉 Do you want me to also create a **Postman collection file** (`.json`) with sample API requests so you can test endpoints directly?
